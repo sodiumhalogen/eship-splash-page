@@ -1,0 +1,27 @@
+// palette
+$blueAction: #09bcef;
+$blueHover: #089abc;
+$blueDark: #004974;
+$grayMedium: #959699;
+$grayLight: #f7f7f7;
+$gold: #fcb600;
+
+// theme
+$primary: $blueAction;
+$secondary: $gold;
+
+nav {
+  background: teal;
+}
+
+h1 {
+  color: $secondary;
+}
+main {
+  img {
+    border-right: $primary 1px solid;
+  }
+  h2 {
+    color: $primary;
+  }
+}
