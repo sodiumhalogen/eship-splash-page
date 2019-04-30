@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "styles": "sass styles/main.scss styles/main.css",
-    "start": "browser-sync start --server --files 'styles/*.css,*.html'"
+    "start": "browser-sync start --server --files 'assets/styles/*.css,*.html'"
   },
   "repository": {
     "type": "git",
