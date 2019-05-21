@@ -11,18 +11,9 @@ $primary: $blueAction;
 $secondary: $gold;
 
 // fonts
-@font-face {
-  font-family: "Museo Sans";
-  src: url("../fonts/Museo\ Sans/MuseoSans-500.otf");
-}
-
-$museo: "Museo Sans";
-@mixin museo() {
-  font-family: $museo;
-}
 
 body {
-  @include museo();
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   background-color: $grayLight;
 }
@@ -50,21 +41,43 @@ p {
   color: $grayMedium;
 }
 
+p.yellow {
+  color: $secondary;
+  margin-bottom: 3rem;
+}
+
 a {
-  color: $blueAction;
+  background: $blueAction;
   text-decoration: none;
+  width: 100px;
+  padding: .5rem 2rem;
+  border-radius: 50px;
+  max-width: 100%;
+  color: white;
+  font-size: 1.3rem;
+  &:hover, &:focus {
+    background: $blueHover;
+  }
+}
+
+.svgWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  svg {
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+  }
 }
 
 main {
   text-align: center;
   padding: 1rem;
   @media screen and (min-width: 600px) {
-    max-width: 700px;
+    max-width: 600px;
   }
   margin: 0 auto;
-  .svgWrapper {
-    padding: 1.5rem;
-  }
   h2 {
     color: $primary;
     text-align: center;
